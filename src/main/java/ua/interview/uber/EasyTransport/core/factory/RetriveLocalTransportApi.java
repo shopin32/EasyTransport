@@ -1,21 +1,21 @@
 package ua.interview.uber.EasyTransport.core.factory;
 
-import java.util.Map;
+import java.util.Map; 
 
-import ua.interview.uber.EasyTransport.core.api.IBussFinder;
+import ua.interview.uber.EasyTransport.core.api.IBusFinder;
 import ua.interview.uber.EasyTransport.core.model.request.Coords;
 
 public class RetriveLocalTransportApi 
 {
 	
-	public static Map<String, IBussFinder> locationServiceMap;
+	public static Map<String, IBusFinder> locationServiceMap;
 	
 	static
 	{
 		//TODO: should register services by location : dependancy injection, hardcode here etc
 	}
 	
-	public static IBussFinder getBussFinderByLocation(Coords coords)
+	public static IBusFinder getBussFinderByLocation(Coords coords)
 	{
 		return locationServiceMap.get(getCityName(coords));
 	}

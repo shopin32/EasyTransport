@@ -5,7 +5,7 @@ package ua.interview.uber.EasyTransport.core.model.response;
  * @author pshopin
  *
  */
-public class BussScheduleInfo 
+public class BusScheduleInfo 
 {
 	/**Bus iudentifier: number, letter etc**/
 	private String busIdentifier; 
@@ -19,7 +19,7 @@ public class BussScheduleInfo
 	/**Timestamp of departure (should be later than timestamp requested)**/
 	private long departureTimestamp;
 	
-	public BussScheduleInfo(String busIdentifier, String busDirection, String busDestination, long departureTimestamp)
+	public BusScheduleInfo(String busIdentifier, String busDirection, String busDestination, long departureTimestamp)
 	{
 		this.busIdentifier = busIdentifier;
 		this.busDirection = busDirection;

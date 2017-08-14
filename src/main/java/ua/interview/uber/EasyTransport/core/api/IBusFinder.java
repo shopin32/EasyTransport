@@ -3,7 +3,7 @@ package ua.interview.uber.EasyTransport.core.api;
 import java.util.List;
 
 import ua.interview.uber.EasyTransport.core.model.request.TransportScheduleRequest;
-import ua.interview.uber.EasyTransport.core.model.response.BussScheduleInfo;
+import ua.interview.uber.EasyTransport.core.model.response.BusScheduleInfo;
 
 /**
  * We predict that in each region there will be it is own service 
@@ -12,12 +12,12 @@ import ua.interview.uber.EasyTransport.core.model.response.BussScheduleInfo;
  * @author pshopin
  *
  */
-public interface IBussFinder 
+public interface IBusFinder 
 {
 	/**
 	 * Finds the busses schedule in some location
 	 * @param request - request containing timestamp and location
 	 * @return - list of busses with info of departure times
 	 */
-	List<BussScheduleInfo> findBusses(TransportScheduleRequest request);
+	List<BusScheduleInfo> findBuses(TransportScheduleRequest request);
 }
