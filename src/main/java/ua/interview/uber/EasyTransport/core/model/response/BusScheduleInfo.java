@@ -27,19 +27,23 @@ public class BusScheduleInfo
 		this.departureTimestamp = departureTimestamp;
 	}
 
-	public String getBusIdentifier() {
+	public String getBusIdentifier() 
+	{
 		return busIdentifier;
 	}
 
-	public String getBusDirection() {
+	public String getBusDirection() 
+	{
 		return busDirection;
 	}
 
-	public String getBusDestination() {
+	public String getBusDestination() 
+	{
 		return busDestination;
 	}
 
-	public long getDepartureTimestamp() {
+	public long getDepartureTimestamp() 
+	{
 		return departureTimestamp;
 	}
 }

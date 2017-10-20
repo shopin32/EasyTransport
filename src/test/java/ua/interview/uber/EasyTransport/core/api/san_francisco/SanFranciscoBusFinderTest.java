@@ -1,7 +1,5 @@
 package ua.interview.uber.EasyTransport.core.api.san_francisco;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 import org.springframework.web.client.RestTemplate;
 

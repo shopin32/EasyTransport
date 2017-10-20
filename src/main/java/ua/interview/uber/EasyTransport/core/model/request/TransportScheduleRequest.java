@@ -31,7 +31,8 @@ public class TransportScheduleRequest
 		this.timestamp = timestamp;
 	}
 
-	public Coords getCoords() {
+	public Coords getCoords() 
+	{
 		return coords;
 	}
 

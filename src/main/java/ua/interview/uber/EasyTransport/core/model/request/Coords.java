@@ -1,4 +1,4 @@
-package ua.interview.uber.EasyTransport.core.model;
+package ua.interview.uber.EasyTransport.core.model.request;
 
 /**
  * Class to contain users geolocation

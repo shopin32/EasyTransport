@@ -18,6 +18,7 @@ public interface IBusFinder
 	 * Finds the busses schedule in some location
 	 * @param request - request containing timestamp and location
 	 * @return - list of busses with info of departure times
+	 * @throws InterruptedException 
 	 */
-	List<BusScheduleInfo> findBuses(TransportScheduleRequest request);
+	List<BusScheduleInfo> findBuses(TransportScheduleRequest request) throws InterruptedException;
 }

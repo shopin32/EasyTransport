@@ -1,18 +1,20 @@
 package ua.interview.uber.EasyTransport.core.factory;
 
+import java.util.HashMap;
 import java.util.Map; 
 
 import ua.interview.uber.EasyTransport.core.api.IBusFinder;
+import ua.interview.uber.EasyTransport.core.api.san_francisco.SanFranciscoBusFinder;
 import ua.interview.uber.EasyTransport.core.model.request.Coords;
 
 public class RetriveLocalTransportApi 
 {
 	
-	public static Map<String, IBusFinder> locationServiceMap;
+	public static Map<String, IBusFinder> locationServiceMap = new HashMap<>();
 	
 	static
 	{
-		//TODO: should register services by location : dependancy injection, hardcode here etc
+		locationServiceMap.put("SanFrancisco", new SanFranciscoBusFinder());
 	}
 	
 	public static IBusFinder getBussFinderByLocation(Coords coords)
@@ -23,6 +25,6 @@ public class RetriveLocalTransportApi
 	public static String getCityName(Coords coords)
 	{
 		//TODO: 
-		return "Kyiv";
+		return "SanFrancisco";
 	}
 }
